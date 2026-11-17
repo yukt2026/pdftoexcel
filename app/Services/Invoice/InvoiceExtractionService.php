@@ -330,7 +330,7 @@ class InvoiceExtractionService
                     'extracted_data' => $aiResult['data'] ?? [],
                     'raw_text' => $rawText,
                     'ai_raw_response' => $aiResult['raw_response'] ?? null,
-                    'ai_model' => $aiResult['ai_model'] ?? 'gemini-1.5-flash',
+                    'ai_model' => $aiResult['ai_model'] ?? 'gemini-3.5-flash-lite',
                     'overall_confidence' => $overallConfidence,
                     'field_confidence_scores' => $confidenceScores,
                     'status' => $status,

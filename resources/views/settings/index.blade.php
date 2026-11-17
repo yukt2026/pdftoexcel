@@ -48,11 +48,11 @@
 
                         <div class="col-md-6">
                             <label class="form-label small fw-semibold text-secondary">AI Extraction Model</label>
-                            @php $currModel = $settings['gemini_model'] ?? 'gemini-1.5-flash'; @endphp
+                            @php $currModel = $settings['gemini_model'] ?? 'gemini-3.5-flash-lite'; @endphp
                             <select name="settings[gemini_model]" class="form-select form-select-sm">
-                                <option value="gemini-1.5-flash" {{ $currModel === 'gemini-1.5-flash' ? 'selected' : '' }}>Gemini 1.5 Flash (Ultra-fast, lowest latency, recommended)</option>
-                                <option value="gemini-1.5-pro" {{ $currModel === 'gemini-1.5-pro' ? 'selected' : '' }}>Gemini 1.5 Pro (Deep spatial layout & complex multi-page)</option>
-                                <option value="gemini-2.0-flash" {{ $currModel === 'gemini-2.0-flash' ? 'selected' : '' }}>Gemini 2.0 Flash</option>
+                                <option value="gemini-3.5-flash-lite" {{ $currModel === 'gemini-3.5-flash-lite' ? 'selected' : '' }}>Gemini 3.5 Flash Lite (Ultra-fast, lowest latency, recommended)</option>
+                                <option value="gemini-3.5-flash" {{ $currModel === 'gemini-3.5-flash' ? 'selected' : '' }}>Gemini 3.5 Flash (High accuracy, standard)</option>
+                                <option value="gemini-3.8-flash" {{ $currModel === 'gemini-3.8-flash' ? 'selected' : '' }}>Gemini 3.8 Flash (Latest flagship multimodal)</option>
                             </select>
                         </div>
 

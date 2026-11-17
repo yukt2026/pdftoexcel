@@ -32,7 +32,7 @@ class ShippingLabelExtractionService
 
         $this->geminiModel = Setting::get('gemini_model')
             ?: config('services.gemini.model')
-            ?: env('GEMINI_MODEL', 'gemini-1.5-flash');
+            ?: env('GEMINI_MODEL', 'gemini-3.5-flash-lite');
     }
 
     /**

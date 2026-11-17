@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         $defaultSettings = [
             'app_name' => ['value' => 'AI Invoice to Excel', 'group' => 'general', 'description' => 'System application name'],
             'gemini_api_key' => ['value' => '', 'group' => 'ai', 'description' => 'Google Gemini API Key for intelligent invoice parsing'],
-            'gemini_model' => ['value' => 'gemini-1.5-flash', 'group' => 'ai', 'description' => 'Target Gemini model for invoice data extraction'],
+            'gemini_model' => ['value' => 'gemini-3.5-flash-lite', 'group' => 'ai', 'description' => 'Target Gemini model for invoice data extraction'],
             'default_currency' => ['value' => 'INR', 'group' => 'general', 'description' => 'Default currency code (Indian Rupee - ₹)'],
             'matching_tolerance_percent' => ['value' => '2.00', 'group' => 'matching', 'description' => 'Allowed variance percentage for automated PO/Shipping matching'],
             'ocr_engine' => ['value' => 'tesseract', 'group' => 'ocr', 'description' => 'OCR engine (tesseract, cloud, pdf_native)'],
